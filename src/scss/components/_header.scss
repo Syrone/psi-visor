@@ -1,0 +1,12 @@
+.header {
+  background-color: var(--#{$prefix}body-bg);
+  padding-block: 1rem;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+
+  @include media-breakpoint-up(lg) {
+    background-color: transparent;
+    padding-block: 2.5rem;
+  }
+}

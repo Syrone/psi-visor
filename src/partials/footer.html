@@ -1,0 +1,94 @@
+<footer class="footer position-relative">
+  <span
+    class="d-none d-sm-block bg-position-center bg-size-cover bg-repeat-repeat pe-none position-absolute inset-0 z-n1"
+    style="background-image: url(./img/footer/background.webp)"></span>
+  <span
+    class="d-block d-sm-none bg-position-center bg-size-cover bg-repeat-repeat pe-none position-absolute inset-0 z-n1"
+    style="background-image: url(./img/footer/background--mobile.webp)"></span>
+
+  <div class="container">
+    <div class="d-flex flex-column gap-32px gap-lg-56px">
+      <div class="d-flex flex-column gap-32px gap-lg-48px">
+        <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between gap-32px">
+          @include('brand.html')
+
+          <div class="d-flex flex-column flex-lg-row gap-8px">
+            <button type="button" class="btn btn-light min-w-lg-180px"
+              data-bs-toggle="modal"
+              data-bs-target="#soon-guest">
+              <span>Войти</span>
+              <span class="icon">
+                <svg>
+                  <use xlink:href="img/icons/login.svg#svg-login"></use>
+                </svg>
+              </span>
+            </button>
+            <button type="button" class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#soon-guest">
+              <span>Попробовать бесплатно</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-32px">
+          <div class="d-flex flex-column flex-lg-row gap-24px gap-lg-40px gap-xl-64px gap-xxl-100px">
+            <ul class="list-group list-group--plaintext gap-12px gap-lg-14px fw-16px fs-lg-20px fw-medium fw-lg-bold lh-normal">
+              <li class="list-group-item">
+                <a href="#" target="_blank" class="btn btn-plaintext fs-inherit fw-inherit lh-inherit">
+                  <span>
+                    Условия использования
+                  </span>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank" class="btn btn-plaintext fs-inherit fw-inherit lh-inherit">
+                  <span>
+                    Политика конфиденциальности
+                  </span>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank" class="btn btn-plaintext fs-inherit fw-inherit lh-inherit">
+                  <span>
+                    Согласие на персональные данные
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <ul class="list-group list-group--plaintext gap-12px gap-lg-14px fw-16px fs-lg-20px fw-medium fw-lg-bold lh-normal">
+              <li class="list-group-item">
+                <a href="#" target="_blank" class="btn btn-plaintext fs-inherit fw-inherit lh-inherit">
+                  <span>
+                    Чат заботы
+                  </span>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank" class="btn btn-plaintext fs-inherit fw-inherit lh-inherit">
+                  <span>
+                    Удаление персональных данных
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="align-self-start align-self-lg-end">
+            <div class="d-flex align-items-center fs-14px fs-lg-20px lh-sm bg-white rounded-12px py-12px py-lg-16px px-8px px-lg-20px">
+              <p>
+                <b class="d-block d-lg-inline text-primary">Вы психолог?</b> Узнайте о профессиональной версии → <a href="#" target="_blank" class="btn btn-plaintext btn-primary fs-inherit fw-normal lh-inherit">PsyAI.pro</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fs-16px fs-lg-20px text-gray-700">
+        <p>
+          © 2025
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,6 @@
+import './components/header.js'
+import './components/collapse.js'
+import './components/modal.js'
+import './components/tooltip.js'
+import './components/swipers.js'
+import './components/transfer.js'

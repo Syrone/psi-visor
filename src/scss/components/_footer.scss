@@ -1,0 +1,9 @@
+.footer {
+  margin-top: 3rem;
+  padding-block: 1.5rem 2rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 6.25rem;
+    padding-block: 6.25rem 3rem;
+  }
+}

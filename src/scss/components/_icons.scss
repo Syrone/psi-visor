@@ -1,0 +1,23 @@
+.icon {
+	--_size: 1rem;
+	--_color: currentColor;
+
+	width: var(--_size);
+	height: var(--_size);
+	flex-shrink: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--_color);
+  transition-duration: 300ms;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+
+	svg {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: contain;
+		object-position: center;
+	}
+}

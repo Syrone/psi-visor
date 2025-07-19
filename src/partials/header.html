@@ -1,0 +1,25 @@
+<header class="header fixed-top">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      @include('brand.html')
+
+      <div class="d-flex gap-lg-8px gap-12px">
+        <button type="button" class="btn btn-transparent btn-lg-light min-w-lg-180px px-lg-32px px-8px"
+          data-bs-toggle="modal"
+          data-bs-target="#soon-guest">
+          <span class="d-none d-lg-inline">Войти</span>
+          <span class="icon">
+            <svg>
+              <use xlink:href="img/icons/login.svg#svg-login"></use>
+            </svg>
+          </span>
+        </button>
+        <button type="button" class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#soon-guest">
+          <span>Попробовать</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
