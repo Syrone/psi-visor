@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html', {title: 'PsiVisor'})
+
+<body>
+  @include('partials/h1.html', {title: 'PsiVisor — независимый взгляд на ваши сессии с психологом'})
+
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      <div class="overflow-hidden">
+        <section class="pt-header position-relative">
+          <span
+            class="d-none d-sm-block bg-position-center bg-size-cover bg-repeat-repeat pe-none position-absolute inset-0 z-n1"
+            style="background-image: url(./img/hero/background.webp)"></span>
+          <span
+            class="d-block d-sm-none bg-position-center bg-size-cover bg-repeat-repeat pe-none position-absolute inset-0 z-n1"
+            style="background-image: url(./img/hero/background--mobile.webp)"></span>
+
+          <span
+            class="w-lg-800px h-lg-800px bg-primary bg-opacity-50 rounded-pill blur-lg-240px blur-100px rotate-60 pe-none position-absolute top-n50 end-n15 z-n1"></span>
+          <span
+            class="w-lg-800px h-lg-800px bg-primary bg-opacity-50 rounded-pill blur-lg-240px blur-100px rotate-60 pe-none position-absolute top-50 start-n35 z-n1"></span>
+
+          <div class="container">
+            <div
+              class="row justify-content-lg-center gy-48px gy-lg-72px pt-64px pt-lg-100px pb-32px pb-lg-60px text-lg-center">
+              <div class="col-lg-9">
+                <h2 class="h1 m-0">
+                  PsiVisor —
+                  <br>
+                  независимый взгляд на ваши сессии с психологом
+                </h2>
+              </div>
+
+              <div class="col-xxl-11">
+                <div class="d-flex flex-column gap-48px gap-lg-72px">
+                  <ul
+                    class="list-group list-group--plaintext list-group--hero gap-24px gap-lg-0 fs-xxl-32px fs-xl-28px fs-lg-24px fs-18px fw-bold lh-normal text-purple">
+                    <li class="list-group-item">
+                      <p>
+                        Почувствуйте уверенность,
+                        <br class="d-inline d-lg-none">
+                        а не сомнения
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>
+                        Больше ясности
+                        <br>
+                        после каждой встречи
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p>
+                        Увидите свой прогресс
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-32px pt-lg-60px pb-56px position-relative">
+          <span class="bg-gradient-indigo blur-100px blur-lg-240px position-absolute inset-0 z-n1"></span>
+
+          <div class="container">
+            <div class="row justify-content-center gy-32px gy-lg-100px">
+              <div class="col-12">
+                <h2 class="text-center m-0">
+                  Знакомая ситуация?
+                </h2>
+              </div>
+
+              <div class="col-xxl-8">
+                <div class="d-flex justify-content-center gap-lg-60px gap-xl-80px gap-xxl-120px">
+                  <div class="d-none d-lg-block align-self-end">
+                    <div class="bg-gray-400 rounded-48px shadow-sm">
+                      <picture>
+                        <source srcset="./img/familiar/image.webp" type="image/webp">
+                        <img loading="lazy" src="./img/familiar/image.png" class="img-fluid" width="386" height="531"
+                          alt="Картинка">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column gap-40px gap-lg-48px fs-14px fs-lg-22px">
+                    <div>
+                      <h3 class="fs-inherit fw-bold lh-inherit mb-8px mb-lg-16px">
+                        Прогресса не чувствую, я просто трачу деньги?
+                      </h3>
+
+                      <p>
+                        Я сомневаюсь в подходе психолога.
+                      </p>
+                      <p>
+                        Чувствую, что что-то идет не так.
+                      </p>
+                      <p>
+                        Кажется, мы топчемся на месте.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 class="fs-inherit fw-bold lh-inherit mb-8px mb-lg-16px">
+                        А вдруг мне можно помочь быстрее и лучше?
+                      </h3>
+
+                      <p>
+                        После сессии в голове каша, боюсь упустить важное.
+                      </p>
+                      <p>
+                        Может, это не мой специалист?
+                      </p>
+                      <p>
+                        Это я „сложная“ или психолог что-то упустил?
+                      </p>
+                    </div>
+                    <div class="fs-18px fs-lg-28px fw-bold text-primary text-center text-lg-start">
+                      <p>
+                        Эти сомнения выматывают.
+                        <br>
+                        И заставляют ходить по кругу.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-none d-lg-flex justify-content-lg-end mt-lg-24px me-lg-100px">
+                  <img loading="lazy" src="./img/familiar/arrow.svg" class="img-fluid" width="120" height="160"
+                    alt="Иконка">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="position-relative text-white">
+          <span
+            class="d-none d-sm-block bg-position-center bg-size-cover bg-repeat-repeat pe-none position-absolute inset-0 z-n1"
+            style="background-image: url(./img/help/background.webp)"></span>
+          <span
+            class="d-sm-none bg-position-center bg-size-cover bg-repeat-repeat pe-none position-absolute inset-0 z-n1"
+            style="background-image: url(./img/help/background--mobile.webp)"></span>
+
+          <div class="container position-relative py-60px py-lg-120px">
+            <div class="row flex-column gy-48px gy-lg-120px">
+              <div class="col-lg-8 col-xl-7 col-xxl-6 offset-xxl-2">
+                <div class="d-flex flex-column gap-48px gap-lg-100px">
+                  <div class="d-flex flex-column gap-32px gap-lg-80px">
+                    <h2 class="m-0">
+                      Как вам поможет PsiVisor?
+                    </h2>
+
+                    <ol
+                      class="list-group list-group-numbered list-group--plaintext list-group--help gap-24px gap-lg-40px fs-14px fs-lg-22px text-gray-200">
+                      <li class="list-group-item">
+                        <div class="d-flex">
+                          <div class="d-flex flex-column gap-12px gap-lg-16px">
+                            <h3 class="fs-16px fs-lg-24px fw-bold text-white m-0">
+                              Прояснит, что происходит на сессии
+                            </h3>
+                            <p>
+                              Разберется в том, что происходит на сессиях.
+                              <br class="d-none d-lg-inline">
+                              Развеет ваши сомнения
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="d-flex">
+                          <div class="d-flex flex-column gap-12px gap-lg-16px">
+                            <h3 class="fs-16px fs-lg-24px fw-bold text-white m-0">
+                              Сделает сессии точнее и глубже
+                            </h3>
+                            <p>
+                              Дает обратную связь и подсказки — чтобы каждая сессия приближала вас к позитивным
+                              переменам
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="d-flex">
+                          <div class="d-flex flex-column gap-12px gap-lg-16px">
+                            <h3 class="fs-16px fs-lg-24px fw-bold text-white m-0">
+                              Зафиксирует важное
+                            </h3>
+                            <p>
+                              Автоматически сохранит ключевые моменты — чтобы вы могли вернуться к ним в любой момент
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item position-lg-static">
+                        <div class="d-flex">
+                          <div class="d-flex flex-column gap-12px gap-lg-16px pe-40px pe-lg-0">
+                            <h3 class="fs-16px fs-lg-24px fw-bold text-white m-0">
+                              Покажет прогресс
+                            </h3>
+                            <p>
+                              Увидите, как вы шаг за шагом приближаетесь к тому, что вам важно — чтобы чувствовать себя
+                              спокойней
+                            </p>
+                          </div>
+
+                          <picture
+                            class="align-self-end flex-shrink-lg-0 ms-n64px ms-lg-0 me-n24px me-lg-0 mb-n48px mb-lg-0">
+                            <source srcset="./img/help/image.webp" type="image/webp">
+                            <img loading="lazy" src="./img/help/image.png"
+                              class="img-fluid max-w-lg-480px max-w-xl-640px max-w-xxl-728px me-lg-n120px position-lg-absolute bottom-lg-0 end-lg-0"
+                              width="728" height="796" alt="Картинка">
+                          </picture>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-64px pt-lg-160px">
+          <div class="container">
+            <div class="row flex-column align-items-center gy-16px gy-lg-48px">
+              <div class="col-md-8 col-lg-12 col-xl-9 col-xxl-8">
+                <div class="d-flex flex-column align-items-center text-center gap-0 gao-lg-28px">
+                  <h2 class="m-0">
+                    Разложим всё по полочкам через <span class="text-cyan">3&nbsp;минуты</span> после сессии
+                    <img loading="lazy" src="./img/steps/arrow.svg"
+                      class="img-fluid max-w-64px d-lg-none align-top mt-16px ms-n24px rotate-30" width="128"
+                      height="150" alt="Картинка">
+                  </h2>
+                  <img loading="lazy" src="./img/steps/arrow.svg" class="img-fluid d-none d-lg-block" width="128"
+                    height="150" alt="Картинка">
+                </div>
+              </div>
+
+              <div class="col-xl-8 col-xxl-5">
+                <div class="d-flex flex-column gap-12px gap-lg-32px">
+                  <div
+                    class="d-flex flex-column align-items-center gap-16px gap-lg-24px fs-14px fs-lg-28px lh-normal text-center bg-gray-100 rounded-20px rounded-lg-32px p-16px py-lg-40px px-lg-48px">
+                    <span class="icon w-40px h-40px w-lg-56px h-lg-56px text-primary-dark">
+                      <svg>
+                        <use xlink:href="img/icons/check--bordered.svg#svg-check--bordered"></use>
+                      </svg>
+                    </span>
+
+                    <h3 class="fs-16px fs-lg-inherit fw-semibold lh-inherit m-0">
+                      Ясный разбор сессии
+                    </h3>
+
+                    <p>
+                      Что было полезно, что можно улучшить, чтобы вы чувствовали себя увереннее
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex flex-column align-items-center gap-16px gap-lg-24px fs-14px fs-lg-28px lh-normal text-center bg-indigo-200 rounded-20px rounded-lg-32px p-16px py-lg-40px px-lg-48px">
+                    <span class="icon w-40px h-40px w-lg-56px h-lg-56px text-primary-dark">
+                      <svg>
+                        <use xlink:href="img/icons/check--bordered.svg#svg-check--bordered"></use>
+                      </svg>
+                    </span>
+
+                    <h3 class="fs-16px fs-lg-inherit fw-semibold lh-inherit m-0">
+                      Ключевые моменты встречи
+                    </h3>
+
+                    <p>
+                      Все важные моменты и выводы, чтобы вы ничего не упустили и не забыли
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex flex-column align-items-center gap-16px gap-lg-24px fs-14px fs-lg-28px lh-normal text-center bg-purple-200 rounded-20px rounded-lg-32px p-16px py-lg-40px px-lg-48px">
+                    <span class="icon w-40px h-40px w-lg-56px h-lg-56px text-primary-dark">
+                      <svg>
+                        <use xlink:href="img/icons/check--bordered.svg#svg-check--bordered"></use>
+                      </svg>
+                    </span>
+
+                    <h3 class="fs-16px fs-lg-inherit fw-semibold lh-inherit m-0">
+                      Анализ динамики
+                    </h3>
+
+                    <p>
+                      Увидите, как вы движетесь к решению своей проблемы от сессии к сессии
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex flex-column align-items-center gap-16px gap-lg-24px fs-14px fs-lg-28px lh-normal text-center bg-cyan-200 rounded-20px rounded-lg-32px p-16px py-lg-40px px-lg-48px">
+                    <span class="icon w-40px h-40px w-lg-56px h-lg-56px text-primary-dark">
+                      <svg>
+                        <use xlink:href="img/icons/check--bordered.svg#svg-check--bordered"></use>
+                      </svg>
+                    </span>
+
+                    <h3 class="fs-16px fs-lg-inherit fw-semibold lh-inherit m-0">
+                      Обратную связь и подсказки
+                    </h3>
+
+                    <p>
+                      Как сделать следующую встречу с психологом более глубокой и полезной
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-64px pt-lg-160px">
+          <div class="container">
+            <div class="d-flex flex-column gap-32px gap-lg-64px">
+              <div class="text-center">
+                <h2 class="m-0">
+                  Как это работает — всего 3 шага
+                </h2>
+              </div>
+
+              <div class="d-flex flex-column gap-40px gap-lg-56px">
+                <div>
+                  <div class="swiper swiper-cards" data-swiper="cards">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div
+                          class="h-100 d-flex flex-column gap-24px gap-lg-36px fs-16px fs-lg-22px lh-normal bg-white rounded-20px rounded-lg-32px p-16px pb-24px pt-lg-20px pb-lg-60px px-lg-24px shadow">
+                          <div class="d-flex flex-column gap-16px gap-lg-20px">
+                            <div>
+                              <picture>
+                                <source srcset="./img/steps/image-1.webp" type="image/webp">
+                                <img loading="lazy" src="./img/steps/image-1.jpg"
+                                  class="img-fluid rounded-24px rounded-lg-48px" width="493" height="328"
+                                  alt="Картинка">
+                              </picture>
+                            </div>
+                            <div class="fs-18px fs-lg-24px fw-bold text-primary-400 text-opacity-60">
+                              <p>
+                                01
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="flex-fill d-flex flex-column gap-16px gap-lg-36px">
+                            <h3 class="fs-20px fs-lg-32px fw-bold lh-inherit text-primary m-0">
+                              Прямо на сайте нажимаете «Записать сессию онлайн»
+                            </h3>
+
+                            <div class="flex-fill">
+                              <p>
+                                Начнется аудиозапись встречи, сайт работает как диктофон
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="h-100 d-flex flex-column gap-24px gap-lg-36px fs-16px fs-lg-22px lh-normal bg-white rounded-20px rounded-lg-32px p-16px pb-24px pt-lg-20px pb-lg-60px px-lg-24px shadow">
+                          <div class="d-flex flex-column gap-16px gap-lg-20px">
+                            <div>
+                              <picture>
+                                <source srcset="./img/steps/image-2.webp" type="image/webp">
+                                <img loading="lazy" src="./img/steps/image-2.jpg"
+                                  class="img-fluid rounded-24px rounded-lg-48px" width="493" height="328"
+                                  alt="Картинка">
+                              </picture>
+                            </div>
+                            <div class="fs-18px fs-lg-24px fw-bold text-primary-400 text-opacity-60">
+                              <p>
+                                02
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="flex-fill d-flex flex-column gap-16px gap-lg-36px">
+                            <h3 class="fs-20px fs-lg-32px fw-bold lh-inherit text-primary m-0">
+                              Сразу после сессии получаете разбор
+                            </h3>
+
+                            <div class="flex-fill">
+                              <p>
+                                Через 3 минуты увидите, что было полезно, что упущено и как превратить сессии в реальные
+                                перемены
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="h-100 d-flex flex-column gap-24px gap-lg-36px fs-16px fs-lg-22px lh-normal bg-white rounded-20px rounded-lg-32px p-16px pb-24px pt-lg-20px pb-lg-60px px-lg-24px shadow">
+                          <div class="d-flex flex-column gap-16px gap-lg-20px">
+                            <div>
+                              <picture>
+                                <source srcset="./img/steps/image-3.webp" type="image/webp">
+                                <img loading="lazy" src="./img/steps/image-3.jpg"
+                                  class="img-fluid rounded-24px rounded-lg-48px" width="493" height="328"
+                                  alt="Картинка">
+                              </picture>
+                            </div>
+                            <div class="fs-18px fs-lg-24px fw-bold text-primary-400 text-opacity-60">
+                              <p>
+                                03
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="flex-fill d-flex flex-column gap-16px gap-lg-36px">
+                            <h3 class="fs-20px fs-lg-32px fw-bold lh-inherit text-primary m-0">
+                              Задайте свои вопросы ИИ в чате
+                            </h3>
+
+                            <div class="flex-fill">
+                              <p>
+                                Обсудите сомнения, чувства и дальнейшие шаги — ИИ поможет без осуждения
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-20px gap-lg-40px">
+                  <div class="min-w-lg-448px d-flex flex-column align-self-lg-center">
+                    <button type="button" class="btn btn-lg btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#soon-guest">
+                      <span>
+                        Получить разбор сессии
+                      </span>
+                    </button>
+                  </div>
+
+                  <div class="fs-16px fs-lg-28px fw-semibold lh-normal text-purple text-center">
+                    <p>
+                      Всего 199 руб. за разбор сессии
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-gradient-indigo-200-to-400 bg-gradient-lg-indigo-400-to-200 mt-64px mt-lg-160px py-32px py-lg-64px position-relative overflow-hidden">
+          <span
+            class="d-none d-sm-block bg-position-center bg-size-cover bg-repeat-repeat pe-none position-absolute inset-0"
+            style="background-image: url(./img/policy/background.webp)"></span>
+          <span
+            class="d-block d-sm-none bg-position-center bg-size-cover bg-repeat-repeat pe-none position-absolute inset-0"
+            style="background-image: url(./img/policy/background--mobile.webp)"></span>
+
+          <div class="container">
+            <div class="row justify-content-center gy-32px gy-lg-64px">
+              <div class="col-12">
+                <div class="text-center">
+                  <h2 class="m-0">
+                    <span class="text-primary">Ваша конфенденциальность — </span>
+                    <br>
+                    наш абсолютный приоритет
+                  </h2>
+                </div>
+              </div>
+              <div class="col-xxl-9">
+                <div class="pt-160px pt-lg-200px pb-lg-64px position-relative z-1">
+                  <div
+                    class="position-absolute top-0 start-25 start-lg-50 end-25 end-lg-auto translate-middle-lg-x z-n1">
+                    <picture>
+                      <source srcset="./img/policy/image.webp" type="image/webp">
+                      <img loading="lazy" src="./img/policy/image.png" class="img-fluid" width="394" height="851"
+                        alt="">
+                    </picture>
+                  </div>
+                  <div class="row gy-8px gy-lg-24px">
+                    <div class="col-lg-7 col-xl-6 offset-lg-3 offset-xl-4">
+                      <div
+                        class="d-flex align-items-center align-items-lg-start gap-12px gap-lg-44px bg-white bg-opacity-40 bg-opacity-lg-60 backdrop-blur-12px border border-primary border-opacity-40 rounded-12px rounded-lg-32px p-16px py-lg-32px px-lg-20px">
+                        <img loading="lazy" src="./img/policy/shield.svg" class="img-fluid max-w-32px max-w-lg-56px"
+                          width="56" height="56" alt="Картинка">
+
+                        <div
+                          class="d-flex flex-column gap-20px gap-lg-0 fs-14px fs-lg-22px lh-sm text-gray-700 text-lg-inherit">
+                          <h3 class="fs-inherit fw-bold lh-inherit text-black text-lg-primary m-0">
+                            100% Конфиденциально
+                          </h3>
+
+                          <p>
+                            Данные обрабатываются анонимно только искусственным интеллектом. Никто из людей их не видит
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-6 offset-lg-1 offset-xl-2">
+                      <div
+                        class="d-flex align-items-center align-items-lg-start gap-12px gap-lg-44px bg-white bg-opacity-40 bg-opacity-lg-60 backdrop-blur-12px border border-primary border-opacity-40 rounded-12px rounded-lg-32px p-16px py-lg-32px px-lg-20px">
+                        <img loading="lazy" src="./img/policy/remove.svg" class="img-fluid max-w-32px max-w-lg-56px"
+                          width="56" height="56" alt="Картинка">
+
+                        <div
+                          class="d-flex flex-column gap-20px gap-lg-0 fs-14px fs-lg-22px lh-sm text-gray-700 text-lg-inherit">
+                          <h3 class="fs-inherit fw-bold lh-inherit text-black text-lg-primary m-0">
+                            Записи сессий сразу удаляются
+                          </h3>
+
+                          <p>
+                            Запись анонимизируется и безвозвратно удаляется с серверов сразу после обработки
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-6 offset-lg-5 offset-xl-6">
+                      <div
+                        class="d-flex align-items-center align-items-lg-start gap-12px gap-lg-44px bg-white bg-opacity-40 bg-opacity-lg-60 backdrop-blur-12px border border-primary border-opacity-40 rounded-12px rounded-lg-32px p-16px py-lg-32px px-lg-20px">
+                        <img loading="lazy" src="./img/policy/encrypt.svg" class="img-fluid max-w-32px max-w-lg-56px"
+                          width="56" height="56" alt="Картинка">
+
+                        <div
+                          class="d-flex flex-column gap-20px gap-lg-0 fs-14px fs-lg-22px lh-sm text-gray-700 text-lg-inherit">
+                          <h3 class="fs-inherit fw-bold lh-inherit text-black text-lg-primary m-0">
+                            Шифруем все данные
+                          </h3>
+
+                          <p>
+                            Текстовый разбор сессий храниться в зашифрованном виде. Доступ только у вас
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-32px pt-lg-160px">
+          <div class="container">
+            <div class="bg-white rounded-20px rounded-lg-32px py-32px px-16px p-lg-32px p-xl-48px p-xxl-64px shadow">
+              <div class="row gy-24px gx-0">
+                <div class="col-xl-6">
+                  <div class="d-flex flex-column gap-32px gap-lg-64px text-center text-lg-start">
+                    <div class="d-flex flex-column gap-16px gap-lg-48px" data-transfer-target="psy-block">
+                      <h2 class="m-0">
+                        <span class="text-primary">
+                          Cоздано для вас
+                        </span>
+                        <br>
+                        вместе с лучшими психологами
+                      </h2>
+
+                      <div class="fs-14px fs-lg-24px">
+                        <p>
+                          <b class="text-primary">PsiVisor</b> разработан в сотрудничестве с опытными психологами,
+                          которые глубоко понимают, как работает терапия
+                          <br>
+                          <br class="d-lg-none">
+                          Они научили наш ИИ быть чутким и понимающим помощником
+                        </p>
+                      </div>
+                    </div>
+                    <div class="min-w-lg-448px d-flex flex-column align-self-lg-start">
+                      <button type="button" class="btn btn-lg btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#soon-guest">
+                        <span>
+                          Попробовать бесплатно
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div
+                    class="max-w-lg-520px d-flex flex-column gap-20px gap-lg-0 mt-32px mt-xl-0 ms-xl-64px ms-xxl-120px order-last"
+                    data-transfer-origin="psy-block" data-transfer-breakpoint="1200">
+                    <a href="#" target="_blank" class="btn btn-psy fs-14px fs-lg-18px"
+                      aria-label="Теперь мои клиенты приходят на следующую встречу подготовленными и мы быстрее продвигаемся. Теперь мои клиенты приходят на следующую встречу подготовленными Теперь мои assagfasgsagag"
+                      title="Теперь мои клиенты приходят на следующую встречу подготовленными и мы быстрее продвигаемся. <br> Теперь мои клиенты приходят на следующую встречу подготовленными Теперь мои assagfasgsagag">
+                      <span class="d-flex align-items-start gap-12px gap-lg-16px">
+                        <picture class="flex-shrink-0">
+                          <source srcset="./img/psy/image-1.webp" type="image/webp">
+                          <img loading="lazy" src="./img/psy/image-1.png" class="img-fluid max-w-64px max-w-lg-104px"
+                            width="104" height="104" alt="Картинка">
+                        </picture>
+                        <div class="d-flex flex-column gap-4px gap-lg-8px lh-sm">
+                          <h3 class="fs-16px fs-lg-20px lh-inherit text-inherit m-0">
+                            Николаева Марина
+                          </h3>
+
+                          <div class="text-lg-black text-gray-700">
+                            <p>
+                              Психолог, супервизор.
+                              <br>
+                              Опыт работы 20+ лет
+                              <span class="d-block text-secondary">г. Москва</span>
+                            </p>
+                          </div>
+                        </div>
+                      </span>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-psy fs-14px fs-lg-18px"
+                      aria-label="Теперь мои клиенты приходят на следующую встречу подготовленными и мы быстрее продвигаемся. Теперь мои клиенты приходят на следующую встречу подготовленными Теперь мои assagfasgsagag"
+                      title="Теперь мои клиенты приходят на следующую встречу подготовленными и мы быстрее продвигаемся. <br> Теперь мои клиенты приходят на следующую встречу подготовленными Теперь мои assagfasgsagag">
+                      <span class="d-flex align-items-start gap-12px gap-lg-16px">
+                        <picture class="flex-shrink-0">
+                          <source srcset="./img/psy/image-2.webp" type="image/webp">
+                          <img loading="lazy" src="./img/psy/image-2.png" class="img-fluid max-w-64px max-w-lg-104px"
+                            width="104" height="104" alt="Картинка">
+                        </picture>
+                        <div class="d-flex flex-column gap-4px gap-lg-8px lh-sm">
+                          <h3 class="fs-16px fs-lg-20px lh-inherit text-inherit m-0">
+                            Алексей Волков
+                          </h3>
+
+                          <div class="text-lg-black text-gray-700">
+                            <p>
+                              Семейный психолог, сексолог.
+                              <br>
+                              Опыт работы 20+ лет
+                              <span class="d-block text-secondary">г. Владивосток</span>
+                            </p>
+                          </div>
+                        </div>
+                      </span>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-psy fs-14px fs-lg-18px"
+                      aria-label="Теперь мои клиенты приходят на следующую встречу подготовленными и мы быстрее продвигаемся. Теперь мои клиенты приходят на следующую встречу подготовленными Теперь мои assagfasgsagag"
+                      title="Теперь мои клиенты приходят на следующую встречу подготовленными и мы быстрее продвигаемся. <br> Теперь мои клиенты приходят на следующую встречу подготовленными Теперь мои assagfasgsagag">
+                      <span class="d-flex align-items-start gap-12px gap-lg-16px">
+                        <picture class="flex-shrink-0">
+                          <source srcset="./img/psy/image-3.webp" type="image/webp">
+                          <img loading="lazy" src="./img/psy/image-3.png" class="img-fluid max-w-64px max-w-lg-104px"
+                            width="104" height="104" alt="Картинка">
+                        </picture>
+                        <div class="d-flex flex-column gap-4px gap-lg-8px lh-sm">
+                          <h3 class="fs-16px fs-lg-20px lh-inherit text-inherit m-0">
+                            Полина Семенова
+                          </h3>
+
+                          <div class="text-lg-black text-gray-700">
+                            <p>
+                              Детский психолог, педагог-психолог высшей категории. Опыт работы 14 лет
+                              <span class="d-block text-secondary">г. Орел</span>
+                            </p>
+                          </div>
+                        </div>
+                      </span>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-psy fs-14px fs-lg-18px"
+                      aria-label="Теперь мои клиенты приходят на следующую встречу подготовленными и мы быстрее продвигаемся. Теперь мои клиенты приходят на следующую встречу подготовленными Теперь мои assagfasgsagag"
+                      title="Теперь мои клиенты приходят на следующую встречу подготовленными и мы быстрее продвигаемся. <br> Теперь мои клиенты приходят на следующую встречу подготовленными Теперь мои assagfasgsagag">
+                      <span class="d-flex align-items-start gap-12px gap-lg-16px">
+                        <picture class="flex-shrink-0">
+                          <source srcset="./img/psy/image-4.webp" type="image/webp">
+                          <img loading="lazy" src="./img/psy/image-4.png" class="img-fluid max-w-64px max-w-lg-104px"
+                            width="104" height="104" alt="Картинка">
+                        </picture>
+                        <div class="d-flex flex-column gap-4px gap-lg-8px lh-sm">
+                          <h3 class="fs-16px fs-lg-20px lh-inherit text-inherit m-0">
+                            Николаева Марина
+                          </h3>
+
+                          <div class="text-lg-black text-gray-700">
+                            <p>
+                              Психолог, обучающий личный терапевт. Опыт работы 6 лет
+                              <span class="d-block text-secondary">г. Москва</span>
+                            </p>
+                          </div>
+                        </div>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-32px pt-lg-160px">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-12 col-xxl-7">
+                <div class="d-flex flex-column gap-36px gap-lg-48px">
+                  <div class="d-flex flex-column gap-36px">
+                    <h2 class="text-center m-0">
+                      Хватит сомневаться,
+                      <br>
+                      пора действовать
+                    </h2>
+                    <div class="fs-14px fs-lg-24px text-gray-700 text-md-center">
+                      <p>
+                        <b>Одна «пустая» сессия</b> = потеря денег и времени
+                      </p>
+                      <p>
+                        <b>Один отчет PsiVisor</b> может стать поворотной точкой,
+                        <br class="d-none d-lg-inline">
+                        которая вернет вашей работе с психологом ясность и направление
+                      </p>
+                    </div>
+                    <div class="align-self-center">
+                      <picture>
+                        <source srcset="./img/act/image.webp" type="image/webp">
+                        <img loading="lazy" src="./img/act/image.png" class="img-fluid" width="782" height="158"
+                          alt="Картинка">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="fs-16px fs-lg-28px fw-bold lh-normal text-center">
+                    <p>
+                      <span class="text-purple">PsiVisor</span> — первый шаг к ясной и точной терапии
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-radial mt-40px mt-lg-100px py-32px py-lg-64px">
+          <div class="container">
+            <div class="d-flex flex-column gap-56px gap-lg-100px">
+              <div
+                class="d-flex flex-column gap-16px gap-lg-32px fs-lg-28px fw-medium lh-normal text-white text-center">
+                <p class="m-0">
+                  Это новый стандарт заботы о себе
+                </p>
+                <p class="m-0">
+                  <span class="position-relative">
+                    И вы его заслуживаете
+                    <img loading="lazy" src="./img/underline.svg"
+                      class="w-100 h-auto object-fit-cover position-absolute top-100 start-0" width="300" height="24"
+                      alt="Декор">
+                  </span>
+                </p>
+              </div>
+
+              <div class="min-w-lg-448px d-flex flex-column align-self-lg-center">
+                <button type="button" class="btn btn-lg btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#soon-guest">
+                  <span>
+                    Получить разбор сессии бесплатно
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bg-gradient-light-to-blue-400">
+          <section class="pt-48px pt-lg-200px">
+            <div class="container">
+              <div class="d-flex flex-column gap-32px gap-lg-64px">
+                <div class="text-center">
+                  <h2 class="m-0">
+                    Ответы на частые вопросы
+                  </h2>
+                </div>
+
+                <div class="accordion accordion-bordered" id="accordion-faq">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header fs-16px fs-lg-24px fw-bold">
+                      <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion-faq-0"
+                        aria-expanded="true"
+                        aria-controls="accordion-faq-0">
+                        <span>
+                          Насколько ИИ вообще компетентен? Можно ли ему доверять?
+                        </span>
+
+                        <span class="icon accordion-button-icon">
+                          <svg>
+                            <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                          </svg>
+                        </span>
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse show"
+                      id="accordion-faq-0"
+                      data-bs-parent="#accordion-faq">
+                      <div class="accordion-body">
+                        <div class="fs-14px fs-lg-20px lh-normal">
+                          <p>
+                            Webflow is a powerful visual development platform that allows designers to build fully responsive websites without writing a single line of code. It combines the flexibility of code with the simplicity of a visual editor, empowering creators to bring their ideas to life faster and more efficiently than ever before.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header fs-16px fs-lg-24px fw-bold">
+                      <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion-faq-1"
+                        aria-expanded="false"
+                        aria-controls="accordion-faq-1">
+                        <span>
+                          Насколько ИИ вообще компетентен? Можно ли ему доверять?
+                        </span>
+
+                        <span class="icon accordion-button-icon">
+                          <svg>
+                            <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                          </svg>
+                        </span>
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse"
+                      id="accordion-faq-1"
+                      data-bs-parent="#accordion-faq">
+                      <div class="accordion-body">
+                        <div class="fs-14px fs-lg-20px lh-normal">
+                          <p>
+                            Webflow is a powerful visual development platform that allows designers to build fully responsive websites without writing a single line of code. It combines the flexibility of code with the simplicity of a visual editor, empowering creators to bring their ideas to life faster and more efficiently than ever before.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header fs-16px fs-lg-24px fw-bold">
+                      <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#accordion-faq-2"
+                        aria-expanded="false"
+                        aria-controls="accordion-faq-2">
+                        <span>
+                          Насколько ИИ вообще компетентен? Можно ли ему доверять?
+                        </span>
+
+                        <span class="icon accordion-button-icon">
+                          <svg>
+                            <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                          </svg>
+                        </span>
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse"
+                      id="accordion-faq-2"
+                      data-bs-parent="#accordion-faq">
+                      <div class="accordion-body">
+                        <div class="fs-14px fs-lg-20px lh-normal">
+                          <p>
+                            Webflow is a powerful visual development platform that allows designers to build fully responsive websites without writing a single line of code. It combines the flexibility of code with the simplicity of a visual editor, empowering creators to bring their ideas to life faster and more efficiently than ever before.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="collapse-faq">
+                    <div class="accordion-item position-absolute opacity-0 pe-none"></div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header fs-16px fs-lg-24px fw-bold">
+                        <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#accordion-faq-3"
+                          aria-expanded="false"
+                          aria-controls="accordion-faq-3">
+                          <span>
+                            Насколько ИИ вообще компетентен? Можно ли ему доверять?
+                          </span>
+
+                          <span class="icon accordion-button-icon">
+                            <svg>
+                              <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </h2>
+                      <div class="accordion-collapse collapse"
+                        id="accordion-faq-3"
+                        data-bs-parent="#accordion-faq">
+                        <div class="accordion-body">
+                          <div class="fs-14px fs-lg-20px lh-normal">
+                            <p>
+                              Webflow is a powerful visual development platform that allows designers to build fully responsive websites without writing a single line of code. It combines the flexibility of code with the simplicity of a visual editor, empowering creators to bring their ideas to life faster and more efficiently than ever before.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center mt-24px mt-lg-32px">
+                    <button type="button" class="btn btn-plaintext btn-primary btn-more"
+                      data-collapse
+                      data-target="#collapse-faq"
+                      aria-expanded="false"
+                      aria-controls="collapse-faq">
+                      <span>Показать еще вопросы</span>
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="img/icons/arrow-down.svg#svg-arrow-down"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          @include('partials/footer.html')
+        </div>
+      </div>
+
+      @include('partials/modals.html')
+    </main>
+  </div>
+</body>
+
+</html>
