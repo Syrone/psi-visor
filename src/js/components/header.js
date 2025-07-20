@@ -6,9 +6,9 @@ let { element: header, height: headerHeight } = getHeaderHeight()
 function handleScroll() {
   if (!header) return
   if (window.scrollY >= (headerHeight * .5)) {
-    header.classList.add('bg-body', 'shadow')
+    header.classList.add('header--fixed')
   } else {
-    header.classList.remove('bg-body', 'shadow')
+    header.classList.remove('header--fixed')
   }
 }
 

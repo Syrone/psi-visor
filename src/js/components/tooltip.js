@@ -1,5 +1,7 @@
 import Tooltip from "bootstrap/js/dist/tooltip.js";
 
+import isTouchDevice from '../_utilities.js'
+
 const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
 const DATA_ATTRIBUTE_PATTERN = /^data-[\w-]*$/i;
 const allowlist = {
@@ -37,10 +39,6 @@ const allowlist = {
   input: ["type", "value"],
   label: ["for"]
 };
-
-function isTouchDevice() {
-  return "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-}
 
 function initializeTooltip(el, isTouch) {
   let dataset = {};

@@ -1,6 +1,12 @@
 .header {
   background-color: var(--#{$prefix}body-bg);
   padding-block: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: #{$zindex-fixed};
+
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
@@ -8,5 +14,16 @@
   @include media-breakpoint-up(lg) {
     background-color: transparent;
     padding-block: 2.5rem;
+    position: absolute;
+  }
+}
+
+.header--fixed {
+  background-color: var(--#{$prefix}body-bg);
+  box-shadow: var(--#{$prefix}box-shadow);
+
+  @include media-breakpoint-up(lg) {
+    background-color: transparent;
+    box-shadow: unset;
   }
 }

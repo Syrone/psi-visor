@@ -407,6 +407,8 @@
   --#{$prefix}btn-active-color: var(--#{$prefix}primary);
 
   height: initial;
+  justify-content: initial;
+  text-align: start;
 
   &.btn-primary {
     --#{$prefix}btn-color: var(--#{$prefix}primary);
@@ -447,6 +449,7 @@
 }
 
 .btn-psy {
+  --#{$prefix}btn-border-width: 0rem;
   --#{$prefix}btn-border-radius: 0rem;
   --#{$prefix}btn-padding-y: 0rem;
   --#{$prefix}btn-padding-x: 0rem;
