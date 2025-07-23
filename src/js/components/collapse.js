@@ -51,28 +51,3 @@ document.querySelectorAll("[data-bs-toggle=\"collapse\"]")?.forEach(trigger => {
   });
 });
 
-document.querySelectorAll('[data-collapse]').forEach(button => {
-  const targetSelector = button.getAttribute('data-target');
-  const target = document.querySelector(targetSelector);
-
-  if (target && !target.classList.contains('d-none')) {
-    target.classList.add('d-none');
-    button.setAttribute('aria-expanded', 'false');
-  }
-
-  button.addEventListener('click', () => {
-    if (!target) return;
-
-    const isHidden = target.classList.contains('d-none');
-
-    target.classList.toggle('d-none');
-
-    button.setAttribute('aria-expanded', String(isHidden));
-
-    const span = button.querySelector('span');
-    if (span) {
-      span.textContent = isHidden ? 'Скрыть' : 'Показать еще вопросы';
-    }
-  });
-});
-
