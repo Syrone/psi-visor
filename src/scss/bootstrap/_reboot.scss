@@ -110,7 +110,11 @@ h2 {
 
 h3 {
   @extend %heading;
-  @include font-size($h3-font-size);
+  font-size: #{map-get($font-sizes, '24px')};
+
+  @include media-breakpoint-up(lg) {
+    @include font-size($h3-font-size);
+  }
 }
 
 h4 {
