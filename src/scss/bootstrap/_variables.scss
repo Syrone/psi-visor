@@ -761,7 +761,7 @@ $h6-font-size:                $font-size-base !default;
 $font-sizes: (
   '70px': $h1-font-size,
   '58px': $h2-font-size,
-  '56px': 3.5,
+  '56px': $font-size-base * 3.5,
   '40px': $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
